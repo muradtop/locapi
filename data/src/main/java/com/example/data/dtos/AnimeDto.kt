@@ -1,10 +1,10 @@
 package com.example.data.dtos
 
-import com.domain.models.FilmModel
+import com.domain.models.AnimeModel
 import com.google.gson.annotations.SerializedName
 
 
-data class FilmDto(
+data class AnimeDto(
     @SerializedName("id")
      val id: String,
     @SerializedName("name")
@@ -13,4 +13,4 @@ data class FilmDto(
     val url: String
 )
 
-fun FilmDto.toDomain() = FilmModel(id, name, url)
+fun AnimeDto.toDomain() = AnimeModel(id, name, url)

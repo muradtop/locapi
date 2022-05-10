@@ -7,8 +7,8 @@
 
     <fragment
         android:id="@+id/movieFragment"
-        android:name="com.example.locationapi.presentation.ui.fragments.MovieFragment"
+        android:name="com.example.locationapi.presentation.ui.fragments.AnimeFragment"
         android:label="fragment_movie"
-        tools:layout="@layout/fragment_movie" />
+        tools:layout="@layout/fragment_anime" />
 
 </navigation>

@@ -1,7 +1,7 @@
 package com.example.locationapi.di
 
-import com.domain.repositories.MovieRepository
-import com.example.data.repository.MovieRepositoryImpl
+import com.domain.repositories.AnimeRepository
+import com.example.data.repository.AnimeRepositoryImpl
 import dagger.Binds
 import dagger.Module
 import dagger.hilt.InstallIn
@@ -13,6 +13,6 @@ abstract class RepositoriesModule {
 
 
     @Binds
-    abstract fun provideMovieRepository(movieRepositoryImpl: MovieRepositoryImpl): MovieRepository
+    abstract fun provideAnimeRepository(animeRepositoryImpl: AnimeRepositoryImpl): AnimeRepository
 
 }

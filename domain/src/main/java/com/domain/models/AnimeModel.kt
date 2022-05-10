@@ -1,6 +1,6 @@
 package com.domain.models
 
-data class FilmModel(
+data class AnimeModel(
     val id: String,
     val name: String,
     val url: String

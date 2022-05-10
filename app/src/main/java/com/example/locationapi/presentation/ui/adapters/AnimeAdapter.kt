@@ -5,14 +5,14 @@ import android.view.ViewGroup
 import androidx.recyclerview.widget.ListAdapter
 import androidx.recyclerview.widget.RecyclerView
 import com.example.locationapi.base.BaseDiffUtil
-import com.example.locationapi.databinding.ItemMovieBinding
-import com.example.locationapi.presentation.models.FilmUI
+import com.example.locationapi.databinding.ItemAnimeBinding
+import com.example.locationapi.presentation.models.AnimeUI
 
-class MovieAdapter :
-    ListAdapter<FilmUI, MovieAdapter.MovieViewHolder>(BaseDiffUtil()) {
-    override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): MovieViewHolder {
-        return MovieViewHolder(
-            ItemMovieBinding.inflate(
+class AnimeAdapter :
+    ListAdapter<AnimeUI, AnimeAdapter.AnimeViewHolder>(BaseDiffUtil()) {
+    override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): AnimeViewHolder {
+        return AnimeViewHolder(
+            ItemAnimeBinding.inflate(
                 LayoutInflater.from(parent.context),
                 parent,
                 false
@@ -21,13 +21,13 @@ class MovieAdapter :
     }
 
 
-    override fun onBindViewHolder(holder: MovieViewHolder, position: Int) {
+    override fun onBindViewHolder(holder: AnimeViewHolder, position: Int) {
         getItem(position)?.let { holder.onBind(it) }
     }
 
-    inner class MovieViewHolder(private val binding: ItemMovieBinding) :
+    inner class AnimeViewHolder(private val binding: ItemAnimeBinding) :
         RecyclerView.ViewHolder(binding.root) {
-        fun onBind(data: FilmUI) {
+        fun onBind(data: AnimeUI) {
             binding.apply {
                 tvTitle.text = data.name
             }

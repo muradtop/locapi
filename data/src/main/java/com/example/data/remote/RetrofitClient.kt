@@ -1,6 +1,6 @@
 package com.example.data.remote
 
-import com.example.data.remote.apiservice.MovieApiService
+import com.example.data.remote.apiservice.AnimeApiService
 import okhttp3.OkHttpClient
 import okhttp3.logging.HttpLoggingInterceptor
 import retrofit2.Retrofit
@@ -27,7 +27,7 @@ class RetrofitClient {
         .client(okHttpClient)
         .build()
 
-    fun provideHeroesApiService(): MovieApiService = retrofit.create(MovieApiService::class.java)
+    fun provideAnimeApiService(): AnimeApiService = retrofit.create(AnimeApiService::class.java)
 
 
     companion object {

@@ -9,8 +9,14 @@ data class AnimeDto(
      val id: String,
     @SerializedName("name")
     val name: String,
+    @SerializedName("climate")
+    val climate: String,
+    @SerializedName("terrain")
+    val terrain: String,
+    @SerializedName("surface_water")
+    val surfaceWater: String,
     @SerializedName("url")
     val url: String
 )
 
-fun AnimeDto.toDomain() = AnimeModel(id, name, url)
+fun AnimeDto.toDomain() = AnimeModel(id, name,climate, terrain, surfaceWater, url)

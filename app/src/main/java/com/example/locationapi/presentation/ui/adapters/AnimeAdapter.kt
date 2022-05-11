@@ -29,7 +29,10 @@ class AnimeAdapter :
         RecyclerView.ViewHolder(binding.root) {
         fun onBind(data: AnimeUI) {
             binding.apply {
-                tvTitle.text = data.name
+                tvLocations.text = data.name
+                tvLocationsOne.text = data.climate
+                tvLocationsTwo.text = data.terrain
+                tvLocationsThree.text = data.surface_water
             }
 
 

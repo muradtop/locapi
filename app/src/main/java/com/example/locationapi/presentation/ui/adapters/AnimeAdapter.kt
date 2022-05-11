@@ -4,7 +4,7 @@ import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.ListAdapter
 import androidx.recyclerview.widget.RecyclerView
-import com.example.locationapi.base.BaseDiffUtil
+import com.example.locationapi.presentation.base.BaseDiffUtil
 import com.example.locationapi.databinding.ItemAnimeBinding
 import com.example.locationapi.presentation.models.AnimeUI
 

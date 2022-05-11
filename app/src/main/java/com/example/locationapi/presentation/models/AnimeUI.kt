@@ -1,7 +1,7 @@
 package com.example.locationapi.presentation.models
 
 import com.domain.models.AnimeModel
-import com.example.locationapi.base.BaseDiffModel
+import com.example.locationapi.presentation.base.BaseDiffModel
 
 
 data class AnimeUI(

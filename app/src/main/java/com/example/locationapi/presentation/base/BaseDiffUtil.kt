@@ -1,4 +1,4 @@
-package com.example.locationapi.base
+package com.example.locationapi.presentation.base
 
 import androidx.recyclerview.widget.DiffUtil
 

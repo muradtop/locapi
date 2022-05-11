@@ -1,7 +1,7 @@
 package com.example.locationapi.presentation.ui.fragments
 
 import com.domain.usecases.FetchAnimeUseCase
-import com.example.locationapi.base.BaseViewModel
+import com.example.locationapi.presentation.base.BaseViewModel
 import com.example.locationapi.presentation.models.AnimeUI
 import com.example.locationapi.presentation.models.toUI
 import dagger.hilt.android.lifecycle.HiltViewModel

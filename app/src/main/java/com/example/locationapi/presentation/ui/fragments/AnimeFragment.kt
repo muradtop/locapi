@@ -4,7 +4,7 @@ package com.example.locationapi.presentation.ui.fragments
 import by.kirich1409.viewbindingdelegate.viewBinding
 import com.example.locationapi.R
 import com.example.locationapi.presentation.ui.adapters.AnimeAdapter
-import com.example.locationapi.base.BaseFragment
+import com.example.locationapi.presentation.base.BaseFragment
 import com.example.locationapi.databinding.FragmentAnimeBinding
 import dagger.hilt.android.AndroidEntryPoint
 

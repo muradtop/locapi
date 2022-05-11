@@ -1,4 +1,4 @@
-package com.example.locationapi.base
+package com.example.locationapi.presentation.base
 
 interface BaseDiffModel {
     val id: String

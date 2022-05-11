@@ -1,4 +1,4 @@
-package com.example.locationapi.base
+package com.example.locationapi.presentation.base
 
 import android.os.Bundle
 import android.view.View
@@ -10,7 +10,6 @@ import androidx.lifecycle.repeatOnLifecycle
 import androidx.viewbinding.ViewBinding
 import com.example.locationapi.presentation.ui.state.UiState
 import kotlinx.coroutines.flow.StateFlow
-import kotlinx.coroutines.flow.collect
 import kotlinx.coroutines.launch
 
 

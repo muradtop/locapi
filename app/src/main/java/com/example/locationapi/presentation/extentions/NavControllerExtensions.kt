@@ -1,4 +1,4 @@
-package com.example.locationapi.common.extentions
+package com.example.locationapi.presentation.extentions
 
 import androidx.annotation.IdRes
 import androidx.navigation.NavController

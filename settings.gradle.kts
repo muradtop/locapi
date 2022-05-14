@@ -20,7 +20,6 @@ dependencyResolutionManagement {
 }
 
 
-rootProject.name = "locationapi"
-include(":app", ":domain")
+rootProject.name = "LocApi"
+include(":app", ":data", ":domain")
 enableFeaturePreview("VERSION_CATALOGS")
-include(":data")

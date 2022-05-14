@@ -14,5 +14,6 @@ class AnimeRepositoryImpl @Inject constructor(
         animeApiService.getAnimeLocations().map { it.toDomain() }
 
 
+
     }
 }

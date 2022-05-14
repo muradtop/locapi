@@ -1,7 +1,7 @@
 plugins {
 
     // Application
-    id("com.android.application")
+    id(libs.plugins.agp.application.get().pluginId)
 
     // Kotlin
     id("kotlin-android")
@@ -10,20 +10,20 @@ plugins {
     id("kotlin-kapt")
 
     // Navigation SafeArgs
-    id("androidx.navigation.safeargs.kotlin")
+    id(libs.plugins.navigation.safeArgs.get().pluginId)
 
     // Hilt
-    id("com.google.dagger.hilt.android")
+    id(libs.plugins.hilt.android.get().pluginId)
 
 }
 
 android {
-    compileSdk = 32
+    compileSdk = libs.versions.compileSdk.get().toInt()
 
     defaultConfig {
-        applicationId = "com.example.locationapi"
-        minSdk = 23
-        targetSdk = 32
+        applicationId = "com.example.locapi"
+        minSdk = libs.versions.minSdk.get().toInt()
+        targetSdk = libs.versions.targetSdk.get().toInt()
         versionCode = 1
         versionName = "1.0"
 
@@ -31,7 +31,7 @@ android {
     }
 
     buildTypes {
-        getByName("release") {
+        release {
             isMinifyEnabled = false
             proguardFiles(
                 getDefaultProguardFile("proguard-android-optimize.txt"), "proguard-rules.pro"
@@ -39,12 +39,13 @@ android {
         }
     }
     compileOptions {
-        sourceCompatibility = JavaVersion.VERSION_1_8
-        targetCompatibility = JavaVersion.VERSION_1_8
+        sourceCompatibility = JavaVersion.VERSION_11
+        targetCompatibility = JavaVersion.VERSION_11
     }
     kotlinOptions {
-        jvmTarget = "1.8"
+        jvmTarget = "11"
     }
+
     //ViewBinding
     buildFeatures.viewBinding = true
 }
@@ -53,11 +54,15 @@ dependencies {
 
     implementation(project(":data"))
     implementation(project(":domain"))
+
     // UI Components
     implementation(libs.bundles.uiComponents)
 
     // Core
     implementation(libs.android.core)
+
+    // Coroutines
+    implementation(libs.coroutines.android)
 
     // Lifecycle
     implementation(libs.bundles.lifecycle)
@@ -67,11 +72,6 @@ dependencies {
 
     // Hilt
     implementation(libs.hilt.android)
-    implementation("androidx.legacy:legacy-support-v4:1.0.0")
     kapt(libs.hilt.compiler)
-
-    //Coroutines
-    implementation(libs.coroutines.android)
-
 
 }

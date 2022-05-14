@@ -33,7 +33,7 @@ class AnimeAdapter :
                 tvLocationsOne.text = data.climate
                 tvLocationsTwo.text = data.terrain
                 tvLocationsThree.text = data.surface_water
-            }
+             }
 
 
         }

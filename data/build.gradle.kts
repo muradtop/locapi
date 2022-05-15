@@ -1,9 +1,8 @@
-import org.jetbrains.kotlin.kapt3.base.Kapt.kapt
 
 plugins {
     id(libs.plugins.agp.library.get().pluginId)
-    id("org.jetbrains.kotlin.android")
-    id("kotlin-kapt")
+    kotlin("android")
+    kotlin("kapt")
 }
 
 android {
